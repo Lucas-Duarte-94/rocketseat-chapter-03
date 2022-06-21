@@ -8,7 +8,7 @@ interface SubscribeButtonProps {
     priceId: string;
 }
 
-export function SubscribeButton({ priceId }: SubscribeButtonProps) {
+export function SubscribeButton() {
     const [session] = useSession();
     const router = useRouter();
 
@@ -18,7 +18,7 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
             return;
         }
 
-        if(session.activeSubscription) {
+        if (session.activeSubscription) {
             router.push('/posts')
             return;
         }
@@ -31,12 +31,12 @@ export function SubscribeButton({ priceId }: SubscribeButtonProps) {
             const stripe = await getStripeJs();
 
             await stripe.redirectToCheckout({ sessionId });
-        } catch(err) {
+        } catch (err) {
             alert(err.message)
         }
     }
 
-    return(
+    return (
         <button type="button" className={styles.subscribeButton} onClick={handleSubscribe}>
             Subscribe now
         </button>
