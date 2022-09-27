@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "@prismicio/client": "^5.1.0",
@@ -16,8 +17,8 @@
     "next": "11.0.1",
     "next-auth": "^3.27.3",
     "prismic-dom": "^2.2.6",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
     "sass": "^1.37.5",
     "stripe": "^8.168.0"
@@ -25,7 +26,7 @@
   "devDependencies": {
     "@testing-library/dom": "^8.13.0",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
+    "@testing-library/react": "^12.0.4",
     "@types/jest": "^28.1.2",
     "@types/next-auth": "^3.15.0",
     "@types/node": "^16.4.12",

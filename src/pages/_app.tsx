@@ -1,5 +1,5 @@
 import { AppProps } from 'next/app';
-import { Header } from '../components/header';
+import { Header } from '../components/Header';
 import { Provider as NextAuthProvider } from 'next-auth/client';
 
 import '../styles/global.scss';
